@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.App {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+}
+
+.stories-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 45px;
+  margin-top: 50px;
+}
+
+.product-story img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.story-title {
+  padding-top: 5px;
+  font-size: 32px;
+  line-height: 0.5rem;
+  font-family: 'Times New Roman';
+}
+
+.story-caption {
+  font-size: 18px;
+  line-height: 0;
+  font-family: sans-serif;
+}
+
+.story-link {
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 0;
+  font-family: 'Times New Roman';
+}
+
+@media (min-width: 968px) {
+  .product-story {
+    max-width: 48rem;
+  }
+  .stories-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1366px) {
+  .stories-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 2300px) {
+  .App {
+    width: 60%;
+  }
+}
