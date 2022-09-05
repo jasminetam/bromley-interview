@@ -15,6 +15,10 @@ body {
   margin-top: 50px;
 }
 
+.product-story {
+  margin: auto;
+}
+
 .product-story img {
   width: 100%;
   max-width: 600px;
@@ -23,24 +27,38 @@ body {
 
 .story-title {
   padding-top: 5px;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 0.5rem;
   font-family: 'Times New Roman';
 }
 
 .story-caption {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 0;
   font-family: sans-serif;
 }
 
 .story-link {
   cursor: pointer;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 0;
   font-family: 'Times New Roman';
 }
 
+@media (min-width: 648px) {
+  .story-title {
+    font-size: 32px;
+  }
+  
+  .story-caption {
+    font-size: 18px;
+  }
+  
+  .story-link {
+    font-size: 22px;
+  }
+
+}
 @media (min-width: 968px) {
   .product-story {
     max-width: 48rem;
